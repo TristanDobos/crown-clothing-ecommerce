@@ -6,6 +6,7 @@ import { createStructuredSelector } from 'reselect';
 import Header from './components/header/header.component';
 import Spinner from './components/spinner/spinner.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
+import Footer from "./components/Footer/Footer";
 
 import { GlobalStyle } from './global.styles';
 
@@ -44,6 +45,8 @@ const App = ({ checkUserSession, currentUser }) => {
           </Suspense>
         </ErrorBoundary>
       </Switch>
+      <Footer/>
+
     </div>
   );
 };
