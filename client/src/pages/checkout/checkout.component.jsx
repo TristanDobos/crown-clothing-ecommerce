@@ -22,7 +22,7 @@ export const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
-        <span>Product</span>
+        <span>Produkt</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
         <span>Popis</span>
