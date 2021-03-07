@@ -25,8 +25,7 @@
   },
   "devDependencies": {
     "react-scripts": "3.0.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6"
+    "enzyme": "^3.11.0"
   },
   "resolutions": {
     "babel-jest": "24.7.1"
