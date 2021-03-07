@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = 'pk_test_b7a3hFL5nC3qlBCZ6bQACpez00gyMMP52H';
+  const publishableKey = 'pk_test_51IFkvDAWITpHJDwfPQCiRVXfwiXGS9FGprbPDRvoCVQZVBaOoTs7JNkxTrp2SH8WcD581TAiAiIbU2S59jtx1Gce00Spf18wDh';
 
   const onToken = token => {
     axios({
@@ -16,26 +16,28 @@ const StripeCheckoutButton = ({ price }) => {
       }
     })
       .then(response => {
-        alert('succesful payment');
+        alert('Platba prebehla úspešne!');
+
       })
       .catch(error => {
-        console.log('Payment Error: ', JSON.parse(error));
+        console.log('Platobná chyba: ', JSON.parse(error));
         alert(
-          'There was an issue with your payment! Please make sure you use the provided credit card.'
+          'Pri zpracovávaní platby nastala chyba. Skúste znova.'
         );
       });
   };
 
   return (
     <StripeCheckout
-      label='Pay Now'
-      name='CRWN Clothing Ltd.'
+      label='Zaplatiť teraz kartou'
+      name='Oblečenie koruna'
+      currency="eur"
       billingAddress
       shippingAddress
-      image='https://sendeyo.com/up/d/f3eb2117da'
-      description={`Your total is $${price}`}
+      image='https://i.ibb.co/0QTybd5/crwn-192x192.png'
+      description={`Cena k úhrade je ${price}€`}
       amount={priceForStripe}
-      panelLabel='Pay Now'
+      panelLabel='Zaplatiť teraz'
       token={onToken}
       stripeKey={publishableKey}
     />

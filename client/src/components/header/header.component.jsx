@@ -23,14 +23,14 @@ export const Header = ({ currentUser, hidden, signOutStart }) => (
       <Logo className='logo' />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink to='/shop'>SHOP</OptionLink>
-      <OptionLink to='/shop'>CONTACT</OptionLink>
+      <OptionLink to='/shop'>OBCHOD</OptionLink>
+
       {currentUser ? (
         <OptionLink as='div' onClick={signOutStart}>
-          SIGN OUT
+          ODHLÁSIŤ SA
         </OptionLink>
       ) : (
-        <OptionLink to='/signin'>SIGN IN</OptionLink>
+        <OptionLink to='/signin'>PRIHLÁSIŤ SA</OptionLink>
       )}
       <CartIcon />
     </OptionsContainer>

@@ -25,26 +25,26 @@ export const CheckoutPage = ({ cartItems, total }) => (
         <span>Product</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Description</span>
+        <span>Popis</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Quantity</span>
+        <span>Množstvo</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Price</span>
+        <span>Cena</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Remove</span>
+        <span>Odobrať</span>
       </HeaderBlockContainer>
     </CheckoutHeaderContainer>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
-    <TotalContainer>TOTAL: ${total}</TotalContainer>
+    <TotalContainer>CELKOM: {total}€</TotalContainer>
     <WarningContainer>
-      *Please use the following test credit card for payments*
+      *Prosím použite nasledovné údaje platobnej karty:*
       <br />
-      4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
+      4242 4242 4242 4242 - Exp: 01/22 - CVV: 123
     </WarningContainer>
     <StripeCheckoutButton price={total} />
   </CheckoutPageContainer>

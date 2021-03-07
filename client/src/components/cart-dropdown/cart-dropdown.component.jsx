@@ -31,7 +31,7 @@ export const CartDropdown = ({ cartItems, history, dispatch }) => (
         dispatch(toggleCartHidden());
       }}
     >
-      GO TO CHECKOUT
+      ÍSŤ DO POKLADNE
     </CartDropdownButton>
   </CartDropdownContainer>
 );

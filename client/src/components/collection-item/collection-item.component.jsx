@@ -23,7 +23,7 @@ export const CollectionItem = ({ item, addItem }) => {
         <PriceContainer>{price}</PriceContainer>
       </CollectionFooterContainer>
       <AddButton onClick={() => addItem(item)} inverted>
-        Add to cart
+        Pridať do košíka
       </AddButton>
     </CollectionItemContainer>
   );
