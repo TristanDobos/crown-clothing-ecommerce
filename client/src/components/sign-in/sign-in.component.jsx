@@ -46,7 +46,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='email'
           handleChange={handleChange}
           value={email}
-          label='e-mail'
+          label='E-mail'
           required
         />
         <FormInput
@@ -54,7 +54,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='password'
           value={password}
           handleChange={handleChange}
-          label='heslo'
+          label='Heslo'
           required
         />
         <ButtonsBarContainer>
@@ -64,7 +64,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
             onClick={googleSignInStart}
             isGoogleSignIn
           >
-            Prihlásiť sa pomocou Googlu
+            Google prihlásenie
           </CustomButton>
         </ButtonsBarContainer>
       </form>
