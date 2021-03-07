@@ -37,8 +37,8 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
 
   return (
     <SignInContainer>
-      <SignInTitle>I already have an account</SignInTitle>
-      <span>Sign in with your email and password</span>
+      <SignInTitle>Už mám účet</SignInTitle>
+      <span>Prihlásiť sa pomocou e-mailu</span>
 
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -46,7 +46,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='email'
           handleChange={handleChange}
           value={email}
-          label='email'
+          label='e-mail'
           required
         />
         <FormInput
@@ -54,17 +54,17 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           type='password'
           value={password}
           handleChange={handleChange}
-          label='password'
+          label='heslo'
           required
         />
         <ButtonsBarContainer>
-          <CustomButton type='submit'> Sign in </CustomButton>
+          <CustomButton type='submit'> Prihlásiť sa </CustomButton>
           <CustomButton
             type='button'
             onClick={googleSignInStart}
             isGoogleSignIn
           >
-            Sign in with Google
+            Prihlásiť sa pomocou Googlu
           </CustomButton>
         </ButtonsBarContainer>
       </form>

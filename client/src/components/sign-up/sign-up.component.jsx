@@ -37,15 +37,15 @@ const SignUp = ({ signUpStart }) => {
 
   return (
     <SignUpContainer>
-      <SignUpTitle>I do not have a account</SignUpTitle>
-      <span>Sign up with your email and password</span>
+      <SignUpTitle>Nemám ešte účet</SignUpTitle>
+      <span>Zaregistruje sa e-mailom a heslom</span>
       <form className='sign-up-form' onSubmit={handleSubmit}>
         <FormInput
           type='text'
           name='displayName'
           value={displayName}
           onChange={handleChange}
-          label='Display Name'
+          label='Celé meno'
           required
         />
         <FormInput
@@ -53,7 +53,7 @@ const SignUp = ({ signUpStart }) => {
           name='email'
           value={email}
           onChange={handleChange}
-          label='Email'
+          label='E-mail'
           required
         />
         <FormInput
@@ -61,7 +61,7 @@ const SignUp = ({ signUpStart }) => {
           name='password'
           value={password}
           onChange={handleChange}
-          label='Password'
+          label='Heslo'
           required
         />
         <FormInput
@@ -69,10 +69,10 @@ const SignUp = ({ signUpStart }) => {
           name='confirmPassword'
           value={confirmPassword}
           onChange={handleChange}
-          label='Confirm Password'
+          label='Potvrdiť heslo'
           required
         />
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <CustomButton type='submit'>Registrovať sa</CustomButton>
       </form>
     </SignUpContainer>
   );
